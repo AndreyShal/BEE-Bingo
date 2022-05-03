@@ -20,6 +20,7 @@
 a:focus,
 a:active {
     outline: none;
+    
 }
 
 nav,
@@ -64,6 +65,7 @@ button::-moz-focus-inner {
 a,
 a:visited {
     text-decoration: none;
+    
 }
 
 a:hover {
@@ -109,12 +111,10 @@ header label {
     display: block;
     width: 70px;
     height: 70px;
-    /* background: #eee; */
     cursor: pointer;
-    /* box-shadow: 2px 2px 4px rgb(0 0 0 / 50%); */
-    /* border-radius: 50%; */
     z-index: 2;
     transition: all .2s ease-in;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 header label:hover {
@@ -168,7 +168,6 @@ header label span:last-child {
     align-items: center;
     background: #181818;
     text-align: center;
-    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.75); */
     transition: all .5s ease-in-out;
     
 }
@@ -212,12 +211,11 @@ nav a {
     border-radius: 55px;
     border: 1px solid #515151;
     display:inline-block;
-    /* padding: 1rem 0; */
-    /* box-sizing: border-box; */
     color: #7C7C7C;
-    font-family: monospace;
-    font-size: 1.5rem;
-    text-decoration: none;
+    font-weight: 400;
+    font-family: "Phonk Contrast DEMO";
+    font-size: 14px;
+    line-height: 24px;
     transition: all .2s ease-in-out;
 }
 
@@ -240,4 +238,18 @@ nav a:hover {
     background-position: center center;
     background-size: contain; 
     background-repeat: no-repeat;
+}
+
+/*......................................ШРИФТЫ.........................*/
+@font-face {
+    font-family: "Phonk Contrast DEMO";
+    src: url("../fonts/Phonk/Phonk\ Contrast\ DEMO.woff2");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Phonk Regular DEMO";
+    src: url("../fonts/Phonk/Phonk\ Regular\ DEMO.woff2");
+    font-style: normal;
+    font-weight: normal;
 }
