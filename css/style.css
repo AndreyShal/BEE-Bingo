@@ -235,13 +235,17 @@ nav a:hover {
 }
 
 /* ..............................................................sections................................ */
-
 .section{
+    margin-bottom: 32px;
+    border-bottom: 1px solid #515151;
+}
+.container{
     display: flex;
     justify-content: center;
 }
 .logotip{
     margin-top: 178px;
+    margin-bottom: 143px;
     width: 60vw;
     height: 0;
     padding-bottom: 60%;
@@ -250,6 +254,95 @@ nav a:hover {
     background-size: contain; 
     background-repeat: no-repeat;
 }
+.run-line{
+    width: 100%;
+    height: 51px;
+    padding: 13px 0;
+    position: relative;
+    background: #282828;
+    overflow: hidden;
+}
+.run-line>.m-forward1{
+	width: 500%;
+    position: absolute;
+    overflow: hidden;
+	overflow: hidden;
+    -webkit-animation: m-forward1 17s linear infinite;
+    animation: m-forward1 17s linear infinite;
+}
+@-webkit-keyframes m-forward1 {
+	0% { left: -250%; }
+	100% { left: 0; }
+}
+@keyframes m-forward1 {
+	0% { left: -250%; }
+	100% { left: 0; }
+}
+
+.run-line>.m-forward1>.marquee-line-forward1{
+	float: right;
+    width: 50%;
+}
+.run-line>.m-forward1>.marquee-line-forward1>span{
+    color: #A58B53;
+}
+
+.run-line>.m-forward1>.marquee-line-forward1>.span1{
+    font-family: "Druk Wide Medium";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    margin-right: 4px;
+}
+.run-line>.m-forward1>.marquee-line-forward1>.span2{
+    font-family: "Inter-BlackItalic";
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 27px;
+}
+.run-line>.m-forward1>.marquee-line-forward1>.span3{
+    font-family: "Druk Wide Medium";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+}
+.run-line>.m-forward1>.marquee-line-forward1>.span4{
+    font-family: "Phonk Contrast DEMO";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+}
+.run-line-disc{
+    margin: 0 16px;
+}
+.run-line-disc:before {
+    content: ' \25CF';
+    font-size: 16px;
+    color: #FCAE00;
+}
+
+.section-title{
+    font-family: "Phonk Contrast DEMO";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
+    margin-bottom: 14px;
+    color: #FCAE00;
+}
+.section-text{
+    font-family: "Druk Wide Medium";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #7C7C7C;
+    margin-bottom: 77px;
+}
+.section-text>span{
+    color: #FCAE00;
+}
+    
 
 /*......................................ШРИФТЫ.........................*/
 @font-face {
@@ -259,8 +352,14 @@ nav a:hover {
     font-weight: normal;
 }
 @font-face {
-    font-family: "Phonk Regular DEMO";
-    src: url("../fonts/Phonk/Phonk\ Regular\ DEMO.woff2");
+    font-family: "Inter-BlackItalic";
+    src: url("../fonts/Inter/Inter-BlackItalic.woff2");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Druk Wide Medium";
+    src: url("../fonts/DrukWideMedium/Druk\ Wide\ Medium.woff2");
     font-style: normal;
     font-weight: normal;
 }
