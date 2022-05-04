@@ -265,7 +265,7 @@ nav a:hover {
     overflow: hidden;
 }
 .run-line>.m-forward1{
-	width: 500%;
+	width: 576%;
     position: absolute;
     overflow: hidden;
 	overflow: hidden;
@@ -273,11 +273,11 @@ nav a:hover {
     animation: m-forward1 17s linear infinite;
 }
 @-webkit-keyframes m-forward1 {
-	0% { left: -250%; }
+	0% { left: -288%; }
 	100% { left: 0; }
 }
 @keyframes m-forward1 {
-	0% { left: -250%; }
+	0% { left: -288%; }
 	100% { left: 0; }
 }
 
@@ -343,7 +343,10 @@ nav a:hover {
 .section-title2{
     margin-bottom: 60px;
 }
-.section-text{
+.section-title3{
+    margin-bottom: 24px;
+}
+.section-text, .section-text a{
     font-family: "Druk Wide Medium";
     font-weight: 500;
     font-size: 16px;
@@ -409,7 +412,7 @@ nav a:hover {
 }
 .swiper2{
     margin-left: 16px;
-    width: 100%;
+    width: calc(100%-16px);
     height: 360px;
     margin-bottom: 36px;
 }
@@ -471,7 +474,56 @@ nav a:hover {
     width: 100%;
     margin-bottom: 36px;
 }
+.phone__container{
+    height: 68px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+.feedback__container{
+    margin-bottom: 60px;
+}
 
+@media only screen and (min-width: 374.95px){
+    .run-line>.m-forward1{
+        width: 550%;
+    }
+    @-webkit-keyframes m-forward1 {
+        0% { left: -275%; }
+        100% { left: 0; }
+    }
+    @keyframes m-forward1 {
+        0% { left: -275%; }
+        100% { left: 0; }
+    }
+}
+@media only screen and (min-width: 389.95px){
+    .run-line>.m-forward1{
+        width: 530%;
+    }
+    @-webkit-keyframes m-forward1 {
+        0% { left: -265%; }
+        100% { left: 0; }
+    }
+    @keyframes m-forward1 {
+        0% { left: -265%; }
+        100% { left: 0; }
+    }
+}
+@media only screen and (min-width: 413.95px){
+    .run-line>.m-forward1{
+        width: 500%;
+    }
+    @-webkit-keyframes m-forward1 {
+        0% { left: -250%; }
+        100% { left: 0; }
+    }
+    @keyframes m-forward1 {
+        0% { left: -250%; }
+        100% { left: 0; }
+    }
+}
 
 
 /*......................................ШРИФТЫ.........................*/
