@@ -91,6 +91,8 @@ h6 {
 }
 
 /*----------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------*/
 :root {
 	--vh: 1vh;
 }
@@ -98,6 +100,9 @@ h6 {
     width: 100vw;
     min-height: 200vh;
     background-color: #0D0D0D;
+}
+.smooth-scroll{
+    display: none;
 }
 
 /* ...............................heder.................... */
@@ -524,6 +529,71 @@ nav a:hover {
         0% { left: -250%; }
         100% { left: 0; }
     }
+}
+
+@media only screen and (min-width: 767.95px){
+    .smooth-scroll{
+        display: block;
+    }
+    section:not(#sectionPin) {
+        min-height: 100vh;
+        width: 100%;
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 2rem;
+        padding: 50px 10vw;
+        margin: auto;
+        place-items: center;
+   }
+    #sectionPin {
+        /* background-color: #fd504e; */
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        left: 0;
+        color: #fff;
+   }
+    #sectionPin .pin-wrap {
+        height: 100vh;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+   }
+   #sectionPin .pin-wrap > .pin-wrap1{
+       width: 400px;
+       height: 100vh;
+       background-color: green;
+   }
+   #sectionPin .pin-wrap > .pin-wrap2{
+        width: 400px;
+        height: 100vh;
+       background-color: red;
+   }
+   #sectionPin .pin-wrap > .pin-wrap3{
+        width: 400px;
+        height: 100vh;
+       background-color: blue;
+   }
+   #sectionPin .pin-wrap > .pin-wrap4{
+        width: 400px;
+        height: 100vh;
+       background-color: fuchsia;
+   }
+    /* #sectionPin .pin-wrap .horizontal--layout {
+        display: grid;
+        writing-mode: vertical-lr;
+        grid-template-rows: repeat(14, 1fr);
+        width: 100vw;
+   }
+    #sectionPin .line__divider {
+        transform: rotate(90deg);
+        width: 300%;
+        height: 1px;
+        margin: 100px;
+        background: #434343;
+        border-bottom: 1px solid green !important;
+   } */
 }
 
 

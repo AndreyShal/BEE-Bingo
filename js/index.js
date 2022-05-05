@@ -43,3 +43,61 @@ var swiper1 = new Swiper(".swiper2", {
     },
   },
 });
+
+// ...................................................smoothScrollingPrinciples......................//
+function smoothScrollingPrinciples() {
+  gsap.registerPlugin(ScrollTrigger);
+
+  const locoScroll = new LocomotiveScroll({
+    el: document.querySelector(".smooth-scroll"),
+    smooth: true,
+  });
+
+  locoScroll.on("scroll", ScrollTrigger.update);
+
+  ScrollTrigger.scrollerProxy(".smooth-scroll", {
+    scrollTop(value) {
+      return arguments.length ? locoScroll.scrollTo(value, 0, 0) : locoScroll.scroll.instance.scroll.y;
+    },
+    getBoundingClientRect() {
+      return { top: 0, left: 0, width: window.innerWidth, height: window.innerHeight };
+    },
+
+    pinType: document.querySelector(".smooth-scroll").style.transform ? "transform" : "fixed",
+  });
+
+  let pinBoxes = document.querySelectorAll(".pin-wrap > *");
+  let pinWrap = document.querySelector(".pin-wrap");
+
+  let pinWrapWidth;
+  let horizontalScrollLength;
+
+  function resize() {
+    pinWrapWidth = pinWrap.offsetWidth;
+    horizontalScrollLength = pinWrapWidth - innerWidth;
+  }
+
+  window.addEventListener("load", function () {
+    // Pinning and horizontal scrolling
+    gsap.to(".pin-wrap", {
+      scrollTrigger: {
+        scroller: ".smooth-scroll",
+        scrub: true,
+        trigger: "#sectionPin",
+        pin: true,
+        start: "top top",
+        end: () => `+=${pinWrapWidth}`, // Functional value to make sure it updates on refresh
+        invalidateOnRefresh: true, // Invalidate the tween as well
+      },
+      x: () => -horizontalScrollLength,
+      ease: "sine.out",
+    });
+
+    ScrollTrigger.addEventListener("refreshInit", resize);
+
+    ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
+
+    ScrollTrigger.refresh();
+  });
+}
+smoothScrollingPrinciples();
