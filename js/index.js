@@ -66,7 +66,7 @@ function smoothScrollingPrinciples() {
     pinType: document.querySelector(".smooth-scroll").style.transform ? "transform" : "fixed",
   });
 
-  let pinBoxes = document.querySelectorAll(".pin-wrap > *");
+  // let pinBoxes = document.querySelectorAll(".pin-wrap > *");
   let pinWrap = document.querySelector(".pin-wrap");
 
   let pinWrapWidth;
