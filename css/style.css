@@ -539,12 +539,10 @@ nav a:hover {
         display: block;
     }
     #sectionPin {
-        /* background-color: #fd504e; */
         height: 100vh;
         overflow: hidden;
         display: flex;
         left: 0;
-        color: #fff;
    }
     #sectionPin .pin-wrap {
         width: 5039px;
@@ -596,48 +594,7 @@ nav a:hover {
         0% { left: -103%; }
         100% { left: 0; }
     }
-    
-    .run-line>.m-forward1>.marquee-line-forward1{
-        float: right;
-        width: 50%;
-    }
-    .run-line>.m-forward1>.marquee-line-forward1>span{
-        color: #A58B53;
-    }
-    
-    .run-line>.m-forward1>.marquee-line-forward1>.span1{
-        font-family: "Druk Wide Medium";
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 26px;
-        margin-right: 4px;
-    }
-    .run-line>.m-forward1>.marquee-line-forward1>.span2{
-        font-family: "Inter-BlackItalic";
-        font-weight: 800;
-        font-size: 17px;
-        line-height: 27px;
-    }
-    .run-line>.m-forward1>.marquee-line-forward1>.span3{
-        font-family: "Druk Wide Medium";
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 26px;
-    }
-    .run-line>.m-forward1>.marquee-line-forward1>.span4{
-        font-family: "Phonk Contrast DEMO";
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 28px;
-    }
-    .run-line-disc{
-        margin: 0 16px;
-    }
-    .run-line-disc:before {
-        content: ' \25CF';
-        font-size: 16px;
-        color: #FCAE00;
-    }
+
     .pin-wrap-num{
         height: 100%;
         border-right: 1px solid #515151;
@@ -740,6 +697,119 @@ nav a:hover {
        padding: 9vh 60px 9vh;
    }
     
+}
+@media only screen and (min-width: 1359.95px){
+    .pin-wrap1 > .container > .logotip{
+        width: 27%;
+        padding: 27%;
+        margin-bottom: 3vh;
+    }
+    .pin-wrap1 > .menu-container > nav > ul li{
+        margin-bottom: 12px;
+    }
+}
+@media only screen and (min-width: 1919.95px){
+    #sectionPin .pin-wrap {
+        width: 5613px;
+    }
+    .pin-wrap1 > .container > .logotip{
+        width: 45%;
+        padding: 45%;
+        margin-bottom: 3vh;
+    }
+    .pin-wrap1{
+        width: 395px;
+        padding-top: 3vh;
+        padding-bottom: 2vh;
+    }
+    .pin-wrap1 > .menu-container > nav > ul li{
+        margin-bottom: 16px;
+    }
+    nav a{
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .section-title{
+        font-size: 36px;
+        line-height: 46px;
+    }
+    .section-text{
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .pin-wrap2{
+        width: 633px;
+    }
+    #section-text1{
+        width: 513px;
+    }
+    .pin-wrap3{
+        width: 633px;
+    }
+    #section-text2{
+        width: 513px;
+    }
+    .pin-wrap4{
+        width: 633px;
+    }
+    #section-text3{
+        width: 513px;
+    }
+    .pin-wrap5{
+        width: 633px;
+    }
+    #section-text4{
+        width: 513px;
+    }
+    .pin-wrap6{
+        width: 1235px;
+    }
+    .pin-wrap6__container{
+        width: 1108px;
+        height: 590px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin: 0 auto;
+    }
+    .pin-wrap6__container>* {
+        flex: 1 1 80px;
+    }
+    .pin-wrap6__container > .achievements{
+        width: 571px;
+        height: 266px;
+    }
+    .pin-wrap6__container > .achievements-poker{
+        width: 507px;
+        height: 590px;
+    } 
+    .achievements-img2{
+        width: 90px;
+        height: 90px;
+    }  
+    .achievements-img3{
+        width: 120px;
+        height: 60px;
+    }
+    .pin-wrap7{
+        width: 696px;
+    }
+    .achievements-img4{
+        width: 85px;
+        height: 178px;
+    }
+    .achievements-partners{
+        width: 569px;
+        height: 410px;
+    }
+    .pin-wrap8{
+        width: 755px;
+    }
+    .pin-wrap8__container > div > .section-text > a{
+        font-size: 32px;
+        line-height: 42px;
+    }
 }
 
 
