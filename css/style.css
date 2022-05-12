@@ -270,7 +270,7 @@ nav a:hover {
     overflow: hidden;
 }
 .run-line>.m-forward1{
-	width: 576%;
+	width: 606%;
     position: absolute;
     overflow: hidden;
 	overflow: hidden;
@@ -278,11 +278,11 @@ nav a:hover {
     animation: m-forward1 17s linear infinite;
 }
 @-webkit-keyframes m-forward1 {
-	0% { left: -288%; }
+	0% { left: -303%; }
 	100% { left: 0; }
 }
 @keyframes m-forward1 {
-	0% { left: -288%; }
+	0% { left: -303%; }
 	100% { left: 0; }
 }
 
@@ -493,40 +493,40 @@ nav a:hover {
 
 @media only screen and (min-width: 374.95px){
     .run-line>.m-forward1{
-        width: 550%;
+        width: 583%;
     }
     @-webkit-keyframes m-forward1 {
-        0% { left: -275%; }
+        0% { left: -281.5%; }
         100% { left: 0; }
     }
     @keyframes m-forward1 {
-        0% { left: -275%; }
+        0% { left: -281.5%; }
         100% { left: 0; }
     }
 }
 @media only screen and (min-width: 389.95px){
     .run-line>.m-forward1{
-        width: 530%;
+        width: 558%;
     }
     @-webkit-keyframes m-forward1 {
-        0% { left: -265%; }
+        0% { left: -279%; }
         100% { left: 0; }
     }
     @keyframes m-forward1 {
-        0% { left: -265%; }
+        0% { left: -279%; }
         100% { left: 0; }
     }
 }
 @media only screen and (min-width: 413.95px){
     .run-line>.m-forward1{
-        width: 500%;
+        width: 527%;
     }
     @-webkit-keyframes m-forward1 {
-        0% { left: -250%; }
+        0% { left: -263.5%; }
         100% { left: 0; }
     }
     @keyframes m-forward1 {
-        0% { left: -250%; }
+        0% { left: -263.5%; }
         100% { left: 0; }
     }
 }
@@ -579,19 +579,14 @@ nav a:hover {
         overflow: hidden;
     }
     .run-line>.m-forward1{
-        width: 206%;
-        position: absolute;
-        overflow: hidden;
-        overflow: hidden;
-        -webkit-animation: m-forward1 20s linear infinite;
-        animation: m-forward1 20s linear infinite;
+        width: 215%;
     }
     @-webkit-keyframes m-forward1 {
-        0% { left: -103%; }
+        0% { left: -107%; }
         100% { left: 0; }
     }
     @keyframes m-forward1 {
-        0% { left: -103%; }
+        0% { left: -107%; }
         100% { left: 0; }
     }
 
@@ -712,18 +707,29 @@ nav a:hover {
     #sectionPin .pin-wrap {
         width: 5613px;
     }
+    .run-line>.m-forward1{
+        width: 193%;
+    }
+    @-webkit-keyframes m-forward1 {
+        0% { left: -96.5%; }
+        100% { left: 0; }
+    }
+    @keyframes m-forward1 {
+        0% { left: -96.5%; }
+        100% { left: 0; }
+    }
     .pin-wrap1 > .container > .logotip{
         width: 45%;
         padding: 45%;
-        margin-bottom: 3vh;
+        margin-bottom: 1vh;
     }
     .pin-wrap1{
         width: 395px;
-        padding-top: 3vh;
-        padding-bottom: 2vh;
+        padding-top: 2vh;
+        padding-bottom: 6vh;
     }
     .pin-wrap1 > .menu-container > nav > ul li{
-        margin-bottom: 16px;
+        margin-bottom: 1vh;
     }
     nav a{
         font-size: 16px;
@@ -805,6 +811,159 @@ nav a:hover {
     }
     .pin-wrap8{
         width: 755px;
+    }
+    .pin-wrap8__container > div > .section-text > a{
+        font-size: 32px;
+        line-height: 42px;
+    }
+}
+@media only screen and (min-width: 2047.95px){
+    #sectionPin .pin-wrap {
+        width: 6906px;
+    }
+    .run-line{
+        padding: 3px 0;
+    }
+    .run-line>.m-forward1{
+        width: 181%;
+    }
+    @-webkit-keyframes m-forward1 {
+        0% { left: -90.5%; }
+        100% { left: 0; }
+    }
+    @keyframes m-forward1 {
+        0% { left: -90.5%; }
+        100% { left: 0; }
+    }
+    .run-line>.m-forward1>.marquee-line-forward1>.span1{
+        font-size: 32px;
+        line-height: 42px;
+    }
+    .run-line>.m-forward1>.marquee-line-forward1>.span2{
+        font-size: 32px;
+        line-height: 27px;
+    }
+    .run-line>.m-forward1>.marquee-line-forward1>.span3{
+        font-size: 32px;
+        line-height: 42px;
+    }
+    .run-line>.m-forward1>.marquee-line-forward1>.span4{
+        font-size: 32px;
+        line-height: 42px;
+    }
+    .run-line-disc{
+        position: relative;
+    }
+    .run-line-disc:before {
+        position: absolute;
+        top: -8px;
+        left: -5px;
+    }
+    .pin-wrap1 > .container > .logotip{
+        width: 45%;
+        padding: 45%;
+        margin-bottom: 1vh;
+    }
+    .pin-wrap1{
+        width: 395px;
+        padding-top: 2vh;
+        padding-bottom: 3vh;
+    }
+    .pin-wrap1 > .menu-container > nav > ul li{
+        margin-bottom: 2vh;
+    }
+    nav a{
+        font-size: 24px;
+        line-height: 26px;
+    }
+    .section-title{
+        font-size: 42px;
+        line-height: 52px;
+    }
+    .section-text{
+        font-size: 32px;
+        line-height: 42px;
+    }
+    .pin-wrap2{
+        width: 744px;
+        padding: 6vh 60px 3vh;
+    }
+    #section-text1{
+        width: 624px;
+        margin-bottom: 3vh;
+    }
+    .pin-wrap3{
+        width: 795px;
+        padding: 1vh 60px 3vh;
+    }
+    #section-text2{
+        width: 624px;
+    }
+    .pin-wrap4{
+        width: 744px;
+    }
+    #section-text3{
+        width: 624px;
+    }
+    .pin-wrap5{
+        width: 744px;
+    }
+    #section-text4{
+        width: 624px;
+    }
+    .pin-wrap6{
+        width: 1893px;
+    }
+    .pin-wrap6__container{
+        width: 1787px;
+        height: 709px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin: 0 auto;
+    }
+    .pin-wrap6__container>* {
+        flex: 1 1 80px;
+    }
+    .pin-wrap6__container > .achievements{
+        width: 977px;
+        height: 336px;
+    }
+    .pin-wrap6__container > .achievements-poker{
+        width: 780px;
+        height: 709px;
+    } 
+    .achievements-img0{
+        width: 120px;
+        height: 120px;
+    }  
+    .achievements-img1{
+        width: 229px;
+        height: 59px;
+    }  
+    .achievements-img2{
+        width: 127px;
+        height: 127px;
+    }  
+    .achievements-img3{
+        width: 165.75px;
+        height: 70px;
+    }
+    .pin-wrap7{
+        width: 836px;
+    }
+    .achievements-img4{
+        width: 85px;
+        height: 178px;
+    }
+    .achievements-partners{
+        width: 730px;
+        height: 508px;
+    }
+    .pin-wrap8{
+        width: 755px;
+        padding: 9vh 60px 20vh;
     }
     .pin-wrap8__container > div > .section-text > a{
         font-size: 32px;
