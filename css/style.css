@@ -100,7 +100,19 @@ h6 {
     width: 100vw;
     min-height: 200vh;
     background-color: #0D0D0D;
+    -ms-overflow-style: none;
+	overflow: -moz-scrollbars-none;
+	scrollbar-width: none;
+	overflow-x: hidden;
 }
+.wrapper::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+.element::-webkit-scrollbar {
+	width: 0;
+}
+
 .smooth-scroll{
     display: none;
 }
@@ -580,6 +592,8 @@ nav a:hover {
     }
     .run-line>.m-forward1{
         width: 215%;
+        -webkit-animation: m-forward1 35s linear infinite;
+        animation: m-forward1 35s linear infinite;
     }
     @-webkit-keyframes m-forward1 {
         0% { left: -107%; }
@@ -968,6 +982,173 @@ nav a:hover {
     .pin-wrap8__container > div > .section-text > a{
         font-size: 32px;
         line-height: 42px;
+    }
+}
+@media only screen and (min-width: 3839.95px){
+    #sectionPin .pin-wrap {
+        width: 11171px;
+    }
+    .run-line{
+        padding: 3px 0;
+    }
+    .run-line>.m-forward1{
+        width: 181%;
+    }
+    @-webkit-keyframes m-forward1 {
+        0% { left: -90.5%; }
+        100% { left: 0; }
+    }
+    @keyframes m-forward1 {
+        0% { left: -90.5%; }
+        100% { left: 0; }
+    }
+    .run-line>.m-forward1>.marquee-line-forward1>.span1{
+        font-size: 32px;
+        line-height: 42px;
+    }
+    .run-line>.m-forward1>.marquee-line-forward1>.span2{
+        font-size: 32px;
+        line-height: 27px;
+    }
+    .run-line>.m-forward1>.marquee-line-forward1>.span3{
+        font-size: 32px;
+        line-height: 42px;
+    }
+    .run-line>.m-forward1>.marquee-line-forward1>.span4{
+        font-size: 32px;
+        line-height: 42px;
+    }
+    .run-line-disc{
+        position: relative;
+    }
+    .run-line-disc:before {
+        position: absolute;
+        top: -8px;
+        left: -5px;
+    }
+    .pin-wrap1 > .container > .logotip{
+        width: 45%;
+        padding: 45%;
+        margin-bottom: 1vh;
+    }
+    .pin-wrap1{
+        width: 771px;
+        padding-top: 2vh;
+        padding-bottom: 3vh;
+    }
+    .pin-wrap1 > .menu-container > nav > ul li{
+        margin-bottom: 2vh;
+    }
+    nav a{
+        font-size: 48px;
+        line-height: 58px;
+    }
+    .section-title{
+        font-size: 64px;
+        line-height: 74px;
+    }
+    .section-text{
+        font-size: 48px;
+        line-height: 58px;
+    }
+    .pin-wrap2{
+        width: 1250px;
+        padding: 6vh 60px 3vh;
+    }
+    #section-text1{
+        width: 1017px;
+        margin-bottom: 3vh;
+    }
+    .pin-wrap3{
+        width: 1257px;
+        padding: 1vh 60px 3vh;
+    }
+    #section-text2{
+        width: 1017px;
+    }
+    .pin-wrap4{
+        width: 1257px;
+    }
+    #section-text3{
+        width: 1017px;
+    }
+    .pin-wrap5{
+        width: 1257px;
+    }
+    #section-text4{
+        width: 1017px;
+    }
+    .pin-wrap6{
+        width: 2790px;
+        padding: 9vh 60px 16vh;
+    }
+    .pin-wrap6__container{
+        width: 2550.5px;
+        height: 1158px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 60px;
+        margin: 0 auto;
+    }
+    .pin-wrap6__container>* {
+        flex: 1 1 80px;
+    }
+    .pin-wrap6__container > .achievements{
+        width: 1318px;
+        height: 494px;
+        padding: 60px;
+    }
+    .pin-wrap6__container > .achievements-poker{
+        width: 1172.5px;
+        height: 1013px;
+        padding: 60px;
+    } 
+    .achievements-img0{
+        width: 140px;
+        height: 140px;
+    }  
+    .achievements-img1{
+        width: 490px;
+        height: 114px;
+    }  
+    .achievements-img2{
+        width: 246px;
+        height: 246px;
+    }  
+    .achievements-img3{
+        width: 330.5px;
+        height: 140px;
+    }
+    .pin-wrap7{
+        width: 1594px;
+        padding: 9vh 60px 31vh;
+    }
+    .achievements-img4{
+        width: 173px;
+        height: 362px;
+    }
+    .achievements-partners{
+        width: 1354px;
+        height: 832px;
+        padding: 60px;
+    }
+    .pin-wrap8{
+        width: 995px;
+        padding: 9vh 60px 27vh;
+    }
+    .pin-wrap8__container > div > .section-text > a{
+        font-size: 48px;
+        line-height: 58px;
+        margin-bottom: 1vh;
+    }
+    .phone__container{
+        height: auto;
+        margin-bottom: 6vh;
+    }
+    .feedback__container{
+        margin-bottom: 6vh;
+
     }
 }
 
