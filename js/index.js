@@ -109,6 +109,8 @@ gsap.from(".vector-line", {
   ease: "elastic",
   yoyo: true,
   repeat: -1,
+  repeatDelay: 0,
+  delay: 0,
 });
 
 gsap.from(".vector-line", {
@@ -118,4 +120,6 @@ gsap.from(".vector-line", {
   transformOrigin: "center",
   yoyo: true,
   repeat: -1,
+  repeatDelay: 0,
+  delay: 0,
 });
