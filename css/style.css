@@ -366,6 +366,7 @@ nav a:hover {
     line-height: 34px;
     text-align: center;
     color: #FCAE00;
+    text-transform: uppercase;
 }
 .section-title1{
     margin-bottom: 14px;
@@ -1238,7 +1239,7 @@ nav a:hover {
         image-rendering: pixelated;
     } */
 
-    .section-img2,.section-img1{
+    .section-img2,.section-img1, .section-img4, .img-menu-fon{
         background-position: center;
         -webkit-animation-name: spin;
         -webkit-animation-duration: 20000ms;
