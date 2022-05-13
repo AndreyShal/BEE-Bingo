@@ -101,3 +101,21 @@ function smoothScrollingPrinciples() {
   });
 }
 smoothScrollingPrinciples();
+
+gsap.from(".vector-line", {
+  duration: 5,
+  opacity: 0,
+  stagger: 0.2,
+  ease: "elastic",
+  yoyo: true,
+  repeat: -1,
+});
+
+gsap.from(".vector-line", {
+  stagger: 0.2,
+  duration: 5,
+  rotate: 180,
+  transformOrigin: "center",
+  yoyo: true,
+  repeat: -1,
+});
