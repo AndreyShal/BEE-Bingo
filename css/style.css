@@ -987,44 +987,50 @@ nav a:hover {
 @media only screen and (min-width: 3839.95px){
     #sectionPin .pin-wrap {
         width: 11171px;
+        padding: 111px 0;
+    }
+    .marque__block{
+        height: 111px;
+        padding: 23px 0;
     }
     .run-line{
-        padding: 3px 0;
+        height: 100%;
+        padding: 0;
     }
     .run-line>.m-forward1{
-        width: 181%;
+        width:246.6%;
+        -webkit-animation: m-forward1 60s linear infinite;
+        animation: m-forward1 60s linear infinite;
     }
     @-webkit-keyframes m-forward1 {
-        0% { left: -90.5%; }
+        0% { left: -123.3%; }
         100% { left: 0; }
     }
     @keyframes m-forward1 {
-        0% { left: -90.5%; }
+        0% { left: -123.3%; }
         100% { left: 0; }
     }
     .run-line>.m-forward1>.marquee-line-forward1>.span1{
-        font-size: 32px;
-        line-height: 42px;
+        font-size: 48px;
+        line-height: 58px;
     }
     .run-line>.m-forward1>.marquee-line-forward1>.span2{
-        font-size: 32px;
-        line-height: 27px;
+        font-size: 48px;
+        line-height: 58px;
     }
     .run-line>.m-forward1>.marquee-line-forward1>.span3{
-        font-size: 32px;
-        line-height: 42px;
+        font-size: 48px;
+        line-height: 58px;
     }
     .run-line>.m-forward1>.marquee-line-forward1>.span4{
-        font-size: 32px;
-        line-height: 42px;
-    }
-    .run-line-disc{
-        position: relative;
+        font-size: 48px;
+        line-height: 58px;
     }
     .run-line-disc:before {
         position: absolute;
-        top: -8px;
-        left: -5px;
+        top: -23px;
+        left: -10px;
+        font-size: 32px;
     }
     .pin-wrap1 > .container > .logotip{
         width: 45%;
@@ -1040,6 +1046,8 @@ nav a:hover {
         margin-bottom: 2vh;
     }
     nav a{
+        border-radius: 70px;
+        padding: 20px 30px;
         font-size: 48px;
         line-height: 58px;
     }
@@ -1099,10 +1107,14 @@ nav a:hover {
         height: 494px;
         padding: 60px;
     }
+    .pin-wrap6__container > .achievements-sports{
+        height: 604px;
+    }
     .pin-wrap6__container > .achievements-poker{
         width: 1172.5px;
         height: 1013px;
         padding: 60px;
+        margin-bottom: 110px;
     } 
     .achievements-img0{
         width: 140px;
@@ -1135,7 +1147,7 @@ nav a:hover {
     }
     .pin-wrap8{
         width: 995px;
-        padding: 9vh 60px 27vh;
+        padding: 9vh 60px 28vh;
     }
     .pin-wrap8__container > div > .section-text > a{
         font-size: 48px;
