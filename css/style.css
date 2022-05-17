@@ -547,6 +547,13 @@ nav a:hover {
     width: 100%;
     margin-bottom: 36px;
 }
+.section-and{
+    width: 100vw;
+    position: relative;
+}
+.section-and > .img-menu-fon{
+    z-index: 1;
+}
 .phone__container{
     height: 68px;
     display: flex;
@@ -791,12 +798,18 @@ nav a:hover {
         height: 128px;
     }  
    .pin-wrap8{
+       position: relative;
        width: 755px;
        border-right: 0px;
        display: flex;
        flex-direction: column;
        justify-content: space-between;
        padding: 9vh 60px 9vh;
+   }
+   .pin-wrap8 > .img-menu-fon{
+       top: 10vh;
+        width: 755px;
+        height: 755px;
    }
     
 }
@@ -1251,6 +1264,11 @@ nav a:hover {
     .pin-wrap8{
         width: 995px;
         padding: 9vh 60px 28vh;
+    }
+    .pin-wrap8 > .img-menu-fon{
+        top: 15vh;
+         width: 995px;
+         height: 995px;
     }
     .pin-wrap8__container > div > .section-text > a{
         font-size: 48px;
