@@ -275,16 +275,35 @@ nav a:hover {
     display: flex;
     justify-content: center;
 }
-.logotip{
-    margin-top: 178px;
+.logotip__container{
+    margin-top: 43px;
     margin-bottom: 143px;
-    width: 60vw;
-    height: 0;
-    padding-bottom: 60%;
-    background-image: url("../img/big-logo.png");
+}
+.logotip__img{
+    width: 70vw;
+    padding-bottom: 109%;
+    background-image: url("../img/logo/Group.png");
     background-position: center center;
     background-size: contain; 
     background-repeat: no-repeat;
+    animation: loader-3 1.2s ease-in-out infinite;
+}
+.logotip__text{
+    width: 70vw;
+    padding-bottom: 60%;
+    background-image: url("../img//logo/Vector\ \(1\).svg");
+    background-position: center center;
+    background-size: contain; 
+    background-repeat: no-repeat;
+}
+@keyframes loader-3 {
+	0%, 100% {
+		transform: translateY(-2.6vmin);
+	}
+	
+	44% {
+		transform: translateY(2.6vmin);
+	}
 }
 .run-line{
     width: 100%;
@@ -633,10 +652,20 @@ nav a:hover {
         padding-top: 0;
         height: auto;
     }
-    .pin-wrap1 > .container > .logotip{
-        width: 45%;
-        padding: 45%;
+    .pin-wrap1 > .container > .logotip__container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         margin: 0;
+    }
+    .logotip__img{
+        width: 80%;
+        padding-bottom: 50%;
+    }
+    .logotip__text{
+        width: 80%;
+        padding-bottom: 50%;
     }
     .pin-wrap1 > .menu-container > nav > ul li{
         text-align: center;
@@ -723,9 +752,15 @@ nav a:hover {
 }
 @media only screen and (min-width: 1359.95px){
     .pin-wrap1 > .container > .logotip{
-        width: 27%;
-        padding: 27%;
         margin-bottom: 3vh;
+    }
+    .logotip__img{
+        width: 23vw;
+        padding-bottom: 96%;
+    }
+    .logotip__text{
+        width: 80%;
+        padding-bottom: 50%;
     }
     .pin-wrap1 > .menu-container > nav > ul li{
         margin-bottom: 12px;
@@ -1300,4 +1335,45 @@ nav a:hover {
 
 
     /* ........................................................................................................................................ */
+    .shine, .chrome {
+        font-size: 3em;
+        margin: 0 auto;
+        margin-bottom: 1em;
+        font-weight: bold;
+   }
+    .shine {
+        background: #222 -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff)) 0 0 no-repeat;
+        -webkit-background-size: 150px;
+        color: rgba(255, 255, 255, 0.3);
+        -webkit-background-clip: text;
+        -webkit-animation-name: shine;
+        -webkit-animation-duration: 5s;
+        -webkit-animation-iteration-count: infinite;
+        text-shadow: 0 0px 0px rgba(255, 255, 255, 0.5);
+   }
+    .chrome {
+        background: #222 -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff)) 0 0 no-repeat;
+        background-image: -webkit-linear-gradient(-40deg, transparent 0%, transparent 40%, #fff 50%, transparent 60%, transparent 100%);
+        -webkit-background-size: 200px;
+        color: rgba(255, 255, 255, 0.3);
+        -webkit-background-clip: text;
+        -webkit-animation-name: shine;
+        -webkit-animation-duration: 5s;
+        -webkit-animation-iteration-count: infinite;
+        text-shadow: 0 0px 0px rgba(255, 255, 255, 0.5);
+   }
+    @-webkit-keyframes shine {
+        0%, 10% {
+            background-position: -1000px;
+       }
+        20% {
+            background-position: top left;
+       }
+        90% {
+            background-position: top right;
+       }
+        100% {
+            background-position: 1000px;
+       }
+   }
     
