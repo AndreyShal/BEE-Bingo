@@ -134,10 +134,19 @@ body::-webkit-scrollbar {
 #burger-checkbox {
     display: none;
 }
+
+.header__wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 1000;
+}
 header{
     display: flex;
     justify-content: center;
 }
+
 
 header label {
     position: relative;
@@ -243,10 +252,17 @@ nav{
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: calc(var(--vh, 1vh) * 80);
 }
-nav>ul>li{
-    margin-bottom: 15px;
+
+nav>ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(var(--vh, 1vh) * 80);
+
 }
+
 
 
 nav a {
@@ -271,13 +287,18 @@ nav a:hover {
     margin-bottom: 32px;
     border-bottom: 1px solid #515151;
 }
+.section1__mobaile{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(var(--vh, 1vh) * 100);
+}
 .container{
     display: flex;
     justify-content: center;
 }
 .logotip__container{
-    margin-top: 43px;
-    margin-bottom: 143px;
+    margin-top: calc(var(--vh, 1vh) * 15);
 }
 .logotip__img{
     width: 70vw;
@@ -287,6 +308,7 @@ nav a:hover {
     background-size: contain; 
     background-repeat: no-repeat;
     animation: loader-3 1.2s ease-in-out infinite;
+    z-index: 1;
 }
 .logotip__text{
     width: 70vw;
@@ -684,6 +706,12 @@ nav a:hover {
         width: 166px;
         height: 36px;
         padding: 0;
+    }
+    .pin-wrap1 > .menu-container > nav{
+        height: auto;
+    }
+    .pin-wrap1 > .menu-container > nav > ul{
+        height: auto;
     }
     .pin-wrap1 > .menu-container > nav > ul li{
         text-align: center;
