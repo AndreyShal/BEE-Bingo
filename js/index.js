@@ -77,27 +77,31 @@ function smoothScrollingPrinciples() {
     horizontalScrollLength = pinWrapWidth - innerWidth;
   }
 
-  window.addEventListener("load", function () {
-    // Pinning and horizontal scrolling
-    gsap.to(".pin-wrap", {
-      scrollTrigger: {
-        scroller: ".smooth-scroll",
-        scrub: true,
-        trigger: "#sectionPin",
-        pin: true,
-        start: "top top",
-        end: () => `+=${pinWrapWidth}`, // Functional value to make sure it updates on refresh
-        invalidateOnRefresh: true, // Invalidate the tween as well
-      },
-      x: () => -horizontalScrollLength,
-      ease: "sine.out",
-    });
+  ScrollTrigger.matchMedia({
+    "(min-width: 767px)": function () {
+      window.addEventListener("load", function () {
+        // Pinning and horizontal scrolling
+        gsap.to(".pin-wrap", {
+          scrollTrigger: {
+            scroller: ".smooth-scroll",
+            scrub: true,
+            trigger: "#sectionPin",
+            pin: true,
+            start: "top top",
+            end: () => `+=${pinWrapWidth}`, // Functional value to make sure it updates on refresh
+            invalidateOnRefresh: true, // Invalidate the tween as well
+          },
+          x: () => -horizontalScrollLength,
+          ease: "sine.out",
+        });
 
-    ScrollTrigger.addEventListener("refreshInit", resize);
+        ScrollTrigger.addEventListener("refreshInit", resize);
 
-    ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
+        ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 
-    ScrollTrigger.refresh();
+        ScrollTrigger.refresh();
+      });
+    },
   });
 }
 smoothScrollingPrinciples();
