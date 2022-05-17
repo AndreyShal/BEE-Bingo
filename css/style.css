@@ -318,8 +318,8 @@ nav a:hover {
     position: absolute;
     overflow: hidden;
 	overflow: hidden;
-    -webkit-animation: m-forward1 17s linear infinite;
-    animation: m-forward1 17s linear infinite;
+    -webkit-animation: m-forward1 7s linear infinite;
+    animation: m-forward1 7s linear infinite;
 }
 @-webkit-keyframes m-forward1 {
 	0% { left: -303%; }
@@ -475,6 +475,7 @@ nav a:hover {
     background: rgba(124, 124, 124, 0.4);
     border-radius: 16px;
     padding: 24px;
+    cursor: pointer;
 }
 .achievements-img__container{
     display: flex;
@@ -541,11 +542,11 @@ nav a:hover {
         width: 583%;
     }
     @-webkit-keyframes m-forward1 {
-        0% { left: -281.5%; }
+        0% { left: -291.5%; }
         100% { left: 0; }
     }
     @keyframes m-forward1 {
-        0% { left: -281.5%; }
+        0% { left: -291.5%; }
         100% { left: 0; }
     }
 }
@@ -572,6 +573,19 @@ nav a:hover {
     }
     @keyframes m-forward1 {
         0% { left: -263.5%; }
+        100% { left: 0; }
+    }
+}
+@media only screen and (min-width: 427.95px){
+    .run-line>.m-forward1{
+        width: 508%;
+    }
+    @-webkit-keyframes m-forward1 {
+        0% { left: -254%; }
+        100% { left: 0; }
+    }
+    @keyframes m-forward1 {
+        0% { left: -254%; }
         100% { left: 0; }
     }
 }
