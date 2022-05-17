@@ -658,21 +658,29 @@ nav a:hover {
         flex-direction: column;
         align-items: center;
         margin: 0;
+        margin-bottom: 2vh;
     }
     .logotip__img{
-        width: 80%;
-        padding-bottom: 50%;
+        width: 154px;
+        height: 168px;
+        padding: 0;
+        margin-bottom: 30px;
     }
     .logotip__text{
-        width: 80%;
-        padding-bottom: 50%;
+        width: 166px;
+        height: 36px;
+        padding: 0;
     }
     .pin-wrap1 > .menu-container > nav > ul li{
         text-align: center;
+        margin-bottom: 1vh;
     }
     .pin-wrap2{
         width: 456px;
         padding: 6vh 60px 3vh;
+    }
+    .section-img__block2{
+        margin-bottom: 0;
     }
     .pin-wrap3{
         width: 490px;
@@ -751,19 +759,16 @@ nav a:hover {
     
 }
 @media only screen and (min-width: 1359.95px){
-    .pin-wrap1 > .container > .logotip{
-        margin-bottom: 3vh;
-    }
     .logotip__img{
-        width: 23vw;
-        padding-bottom: 96%;
+        width: 107px;
+        height: 116px;
     }
     .logotip__text{
-        width: 80%;
-        padding-bottom: 50%;
+        width: 115px;
+        height: 25px;
     }
     .pin-wrap1 > .menu-container > nav > ul li{
-        margin-bottom: 12px;
+        margin-bottom: 1vh;
     }
 }
 @media only screen and (min-width: 1919.95px){
@@ -781,10 +786,13 @@ nav a:hover {
         0% { left: -96.5%; }
         100% { left: 0; }
     }
-    .pin-wrap1 > .container > .logotip{
-        width: 45%;
-        padding: 45%;
-        margin-bottom: 1vh;
+    .logotip__img{
+        width: 245px;
+        height: 267px;
+    }
+    .logotip__text{
+        width: 265px;
+        height: 58px;
     }
     .pin-wrap1{
         width: 395px;
@@ -1081,10 +1089,14 @@ nav a:hover {
         left: -10px;
         font-size: 32px;
     }
-    .pin-wrap1 > .container > .logotip{
-        width: 45%;
-        padding: 45%;
-        margin-bottom: 1vh;
+    .logotip__img{
+        width: 377px;
+        height: 411px;
+        margin-bottom: 70px;
+    }
+    .logotip__text{
+        width: 406px;
+        height: 89px;
     }
     .pin-wrap1{
         width: 771px;
