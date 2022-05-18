@@ -1,3 +1,13 @@
+window.onload = function () {
+  document.body.classList.add("loaded_hiding");
+  // document.body.classList.add("body-hidden");
+  window.setTimeout(function () {
+    document.body.classList.add("loaded");
+    document.body.classList.remove("loaded_hiding");
+    // document.body.classList.remove("body-hidden");
+  }, 500);
+};
+
 function correctVhWindow() {
   // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
   let vh = window.innerHeight * 0.01;
