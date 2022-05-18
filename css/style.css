@@ -660,6 +660,23 @@ nav a:hover {
     position: absolute;
     z-index: 1;
 }
+.img-menu-fon__wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.img-menu-fon__container{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 51px;
+}
 .phone__container{
     height: 68px;
     display: flex;
@@ -693,6 +710,7 @@ nav a:hover {
     font-family: "Inter-BlackItalic";
     color: #515151;
 }
+
 
 
 @media only screen and (min-width: 374.95px){
@@ -998,9 +1016,15 @@ nav a:hover {
        border-right: 0px;
        padding: 9vh 60px 0vh;
    }
+   .img-menu-fon__container{
+        position: relative;
+        width: 700px;
+        height: 700px;
+        margin-bottom: 0px;
+    }
    .pin-wrap7>.section-title{
         margin-bottom: 10vh;
-}
+    }
    .pin-wrap8 > .img-menu-fon{
         top: 10vh;
         width: 755px;
@@ -1535,6 +1559,11 @@ nav a:hover {
     .pin-wrap8{
         width: 995px;
         padding: 9vh 60px 0vh;
+    }
+    .img-menu-fon__container{
+        position: relative;
+        width: 950px;
+        height: 950px;
     }
     .pin-wrap8 > .img-menu-fon{
         top: 15vh;
