@@ -186,14 +186,14 @@
               </div>
               <div class="menu-container">
                 <nav>
-                  <ul>
-                    <li><a href="#">Our team</a></li>
-                    <li><a href="#">All world</a></li>
-                    <li><a href="#">Our predictions</a></li>
-                    <li><a href="#">The world is most</a></li>
-                    <li><a href="#">We care</a></li>
-                    <li><a href="#">Our partners</a></li>
-                    <li><a href="#">Contact</a></li>
+                  <ul id="menu">
+                    <li><a id="scroll-team" href="#">Our team</a></li>
+                    <li><a id="scroll-all-world" href="#">All world</a></li>
+                    <li><a id="scroll-predictions" href="#">Our predictions</a></li>
+                    <li><a id="scroll-world-most" href="#">The world is most</a></li>
+                    <li><a id="scroll-care" href="#">We care</a></li>
+                    <li><a id="scroll-partners" href="#">Our partners</a></li>
+                    <li><a id="scroll-contact" href="#contact-dsc">Contact</a></li>
                   </ul>
                 </nav>
               </div>
@@ -389,7 +389,7 @@
                 </div>
               </div>
             </div>
-            <div class="pin-wrap-num pin-wrap8">
+            <div class="pin-wrap-num pin-wrap8" id="#contact-dsc">
               <div class="img-menu-fon"></div>
               <div class="section-title section-title2">Contacts</div>
               <div class="pin-wrap8__container">
@@ -414,24 +414,23 @@
       <div class="wrapper-mobail">
         <div class="header__wrapper">
           <header>
-            <input type="checkbox" id="burger-checkbox" />
-            <label class="burger-checkbox" for="burger-checkbox">
-              <span></span>
-              <span></span>
-              <span></span>
+            <label class="burger-checkbox">
+              <span class="burger-span1"></span>
+              <span class="burger-span2"></span>
+              <span class="burger-span3"></span>
             </label>
             <div class="menu-wrapper">
               <div class="menu-container">
                 <div class="img-menu-fon"></div>
                 <nav>
                   <ul>
-                    <li><a href="#">Our team</a></li>
-                    <li><a href="#">All world</a></li>
-                    <li><a href="#">Our predictions</a></li>
-                    <li><a href="#">The world is most</a></li>
-                    <li><a href="#">We care</a></li>
-                    <li><a href="#">Our partners</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a class="menu-hidden" href="#our-team">Our team</a></li>
+                    <li><a class="menu-hidden" href="#all-world">All world</a></li>
+                    <li><a class="menu-hidden" href="#predictions">Our predictions</a></li>
+                    <li><a class="menu-hidden" href="#world-most">The world is most</a></li>
+                    <li><a class="menu-hidden" href="#care">We care</a></li>
+                    <li><a class="menu-hidden" href="#partners">Our partners</a></li>
+                    <li><a class="menu-hidden" href="#contact">Contact</a></li>
                   </ul>
                 </nav>
               </div>
@@ -468,7 +467,7 @@
             </div>
           </div>
         </div>
-        <div class="section">
+        <div class="section" id="our-team">
           <div class="section-text__container">
             <div class="section-title section-title1">OUR TEAM</div>
             <div id="section-text1" class="section-text section-text1">
@@ -481,7 +480,7 @@
             </div>
           </div>
         </div>
-        <div class="section">
+        <div class="section" id="all-world">
           <div class="container">
             <div class="section-img__block section-img__block2">
               <div class="section-img section-img2"></div>
@@ -495,7 +494,7 @@
             </div>
           </div>
         </div>
-        <div class="section">
+        <div class="section" id="predictions">
           <div class="section-text__container">
             <div class="section-title section-title1">OUR PREDICTIONS</div>
             <div id="section-text3" class="section-text section-text1">
@@ -575,7 +574,7 @@
             </div>
           </div>
         </div>
-        <div class="section">
+        <div class="section" id="world-most">
           <div class="container">
             <div class="section-img__block section-img__block2">
               <div class="section-img section-img4"></div>
@@ -588,7 +587,7 @@
             </div>
           </div>
         </div>
-        <div class="section">
+        <div class="section" id="care">
           <div class="section-title section-title2">WE CARE</div>
           <div class="swiper swiper2">
             <div class="swiper-wrapper">
@@ -628,7 +627,7 @@
             </div>
           </div>
         </div>
-        <div class="section section-partners">
+        <div class="section section-partners" id="partners">
           <div class="section-title section-title2">Our partners</div>
           <div onclick="window.open('https://kings.soccer/');" class="achievements achievements-partners">
             <div class="achievements-img__container">
@@ -640,8 +639,8 @@
             </div>
           </div>
         </div>
-        <div class="section-and">
-          <!-- <div class="img-menu-fon"></div> -->
+        <div class="section-and" id="contact">
+          <div class="img-menu-fon"></div>
           <div class="section-title section-title2">Contacts</div>
           <div class="section-title section-title3">Phone</div>
           <div class="phone__container">
@@ -652,9 +651,15 @@
             <div class="section-title section-title3">Email</div>
             <div class="section-text"><a href="mailto:a@bee.bingo?subject=subject&body=body">a@bee.bingo</a></div>
           </div>
-          <div class="feedback__container">
+          <div class="feedback__container-and">
             <div class="section-title section-title3">Skype</div>
             <div class="section-text"><a href="skype:a@bee.bingo">a@bee.bingo</a></div>
+          </div>
+          <div class="copyright__wrapper">
+            <div class="copyright-text__container">
+              <div class="copyright-text">Copyright © 2022, BEE BINGO</div>
+              <div class="copyright-text">Developed by First Studio</div>
+            </div>
           </div>
           <div class="run-line">
             <div class="m-forward1">
@@ -683,6 +688,7 @@
     </div>
     <script src="https://video1.i01.ai/swiper/swiper-bundle.min.js"></script>
     <script src="./js/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollToPlugin.min.js"></script>
     <script src="./js/ScrollTrigger.js"></script>
     <script src="./js/locomotive-scroll.min.js"></script>
     <script src="./js/index.js"></script>

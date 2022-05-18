@@ -13,9 +13,30 @@ function correctVhWindow() {
 }
 correctVhWindow();
 
-document.querySelector(".burger-checkbox").addEventListener("click", function () {
-  document.body.classList.toggle("body-hidden");
-});
+// ..................................................................toggleMenu.....................//
+function toggleMenu() {
+  document.querySelector(".burger-checkbox").addEventListener("click", function () {
+    document.querySelector(".menu-wrapper").classList.toggle("left-menu");
+    document.body.classList.toggle("body-hidden");
+    document.querySelector(".burger-span1").classList.toggle("burger-span1-checked");
+    document.querySelector(".burger-span2").classList.toggle("burger-span2-checked");
+    document.querySelector(".burger-span3").classList.toggle("burger-span3-checked");
+  });
+  let menuHidden = document.querySelectorAll(".menu-hidden");
+  for (let i = 0; i < menuHidden.length; i++) {
+    menuHidden[i].addEventListener("click", function () {
+      document.querySelector(".menu-wrapper").classList.toggle("left-menu");
+      document.body.classList.toggle("body-hidden");
+      document.querySelector(".burger-span1").classList.toggle("burger-span1-checked");
+      document.querySelector(".burger-span2").classList.toggle("burger-span2-checked");
+      document.querySelector(".burger-span3").classList.toggle("burger-span3-checked");
+    });
+  }
+}
+toggleMenu();
+
+// document.querySelector(".burger-checkbox").addEventListener("click", function () {
+// });
 
 // ..........................................................swiper..............//
 var swiper1 = new Swiper(".swiper2", {
@@ -106,21 +127,6 @@ function smoothScrollingPrinciples() {
 }
 smoothScrollingPrinciples();
 
-function correctVhWindow() {
-  // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
-  let vh = window.innerHeight * 0.01;
-  // Then we set the value in the --vh custom property to the root of the document
-  document.documentElement.style.setProperty("--vh", `${vh}px`);
-
-  // We listen to the resize event
-  window.addEventListener("resize", () => {
-    // We execute the same script as before
-    let vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty("--vh", `${vh}px`);
-  });
-}
-correctVhWindow();
-
 function imageTransformGsap() {
   gsap.from(".vector-line", {
     duration: 5,
@@ -145,3 +151,32 @@ function imageTransformGsap() {
   });
 }
 imageTransformGsap();
+
+function scrollGsap() {
+  gsap.registerPlugin(ScrollToPlugin);
+  document.querySelector("#scroll-team").addEventListener("click", function () {
+    gsap.to(window, { duration: 2, scrollTo: 70 });
+  });
+  document.querySelector("#scroll-all-world").addEventListener("click", function () {
+    gsap.to(window, { duration: 2, scrollTo: 430 });
+  });
+  document.querySelector("#scroll-predictions").addEventListener("click", function () {
+    gsap.to(window, { duration: 2, scrollTo: 790 });
+  });
+  document.querySelector("#scroll-world-most").addEventListener("click", function () {
+    gsap.to(window, { duration: 2, scrollTo: 1150 });
+  });
+  document.querySelector("#scroll-care").addEventListener("click", function () {
+    gsap.to(window, { duration: 2, scrollTo: 2050 });
+  });
+
+  document.querySelector("#scroll-partners").addEventListener("click", function () {
+    gsap.to(window, { duration: 2, scrollTo: 3250 });
+  });
+
+  document.querySelector("#scroll-contact").addEventListener("click", function () {
+    gsap.to(window, { duration: 2, scrollTo: "max" });
+    // gsap.to(document.querySelector("#sectionPin"), { duration: 2, scrollTo: { y: 0, x: 3250 }, ease: "power2" });
+  });
+}
+scrollGsap();
