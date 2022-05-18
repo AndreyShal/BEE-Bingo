@@ -933,12 +933,16 @@ nav a:hover {
         padding: 6vh 60px 4.5vh;
    }
    .pin-wrap6{
+       display: block;
         width: 1572px;
         position: relative;
-        display: flex;
+        /* display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        padding: 9vh 60px 24vh;
+        justify-content: space-between; */
+        padding: 9vh 60px 0vh;
+   }
+   .pin-wrap6>.section-title{
+       margin-bottom: 10vh;
    }
    .pin-wrap6 > .img-menu-fon{
        top: 3vh;
@@ -972,10 +976,11 @@ nav a:hover {
     }  
     .pin-wrap7{
         width: 584px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 9vh 60px 24vh;
+        padding: 9vh 60px 0vh;
+        display: block;
+    }
+    .pin-wrap7>.section-title{
+        margin-bottom: 10vh;
     }
     .achievements-partners{
         width: 464px;
@@ -987,25 +992,37 @@ nav a:hover {
         height: 128px;
     }  
    .pin-wrap8{
+       display: block;
        position: relative;
        width: 755px;
        border-right: 0px;
-       display: flex;
-       flex-direction: column;
-       justify-content: space-between;
        padding: 9vh 60px 0vh;
    }
+   .pin-wrap7>.section-title{
+        margin-bottom: 10vh;
+}
    .pin-wrap8 > .img-menu-fon{
-       top: 10vh;
+        top: 10vh;
         width: 755px;
         height: 755px;
    }
    .pin-wrap8>.section-title{
-       margin-bottom: 21vh;
+       margin-bottom: 10vh;
+   }
+   .copyright__wrapper{
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       position: absolute;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+       align-items: center;
    }
    .copyright-text__container{
-    height: 76px;
-    padding: 24px 0;
+        height: 76px;
+        padding: 24px 0;
     }
     .copyright-text{
         font-size: 10px;
@@ -1025,17 +1042,6 @@ nav a:hover {
     .pin-wrap1 > .menu-container > nav > ul li{
         margin-bottom: 1vh;
     }
-    /* .pin-wrap8>.section-title{
-        margin-bottom: 21vh;
-    }
-    .copyright-text__container{
-     height: 76px;
-     padding: 24px 0;
-     }
-     .copyright-text{
-         font-size: 10px;
-         line-height: 12px;
-     } */
 }
 @media only screen and (min-width: 1919.95px){
     #sectionPin .pin-wrap {
@@ -1161,8 +1167,19 @@ nav a:hover {
         width: 755px;
     }
     .pin-wrap8__container > div > .section-text > a{
-        font-size: 32px;
-        line-height: 42px;
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .pin-wrap8>.section-title{
+        margin-bottom: 10vh;
+    }
+    .copyright-text__container{
+        height: 94px;
+        padding: 24px 0;
+    }
+     .copyright-text{
+        font-size: 16px;
+        line-height: 19px;
     }
 }
 @media only screen and (min-width: 2047.95px){
@@ -1322,11 +1339,19 @@ nav a:hover {
     }
     .pin-wrap8{
         width: 755px;
-        padding: 9vh 60px 20vh;
+        padding: 9vh 60px 0vh;
     }
     .pin-wrap8__container > div > .section-text > a{
         font-size: 32px;
         line-height: 42px;
+    }
+    .copyright-text__container{
+        height: 94px;
+        padding: 24px 0;
+    }
+     .copyright-text{
+        font-size: 16px;
+        line-height: 19px;
     }
 }
 @media only screen and (min-width: 3839.95px){
@@ -1509,7 +1534,7 @@ nav a:hover {
     }
     .pin-wrap8{
         width: 995px;
-        padding: 9vh 60px 28vh;
+        padding: 9vh 60px 0vh;
     }
     .pin-wrap8 > .img-menu-fon{
         top: 15vh;
@@ -1528,6 +1553,14 @@ nav a:hover {
     .feedback__container{
         margin-bottom: 6vh;
 
+    }
+    .copyright-text__container{
+        height: 154px;
+        padding: 40px 0;
+    }
+     .copyright-text{
+        font-size: 24px;
+        line-height: 29px;
     }
 }
 
