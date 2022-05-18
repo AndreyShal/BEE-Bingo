@@ -185,7 +185,7 @@ function scrollGsap() {
   });
 
   document.querySelector("#scroll-contact").addEventListener("click", function () {
-    gsap.to(window, { duration: 2, scrollTo: "max" });
+    console.log(gsap.to(window, { duration: 2, scrollTo: "max" }));
     // gsap.to(document.querySelector("#sectionPin"), { duration: 2, scrollTo: { y: 0, x: 3250 }, ease: "power2" });
   });
 }
