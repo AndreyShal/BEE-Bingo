@@ -918,8 +918,8 @@ nav a:active {
     }
     .run-line>.m-forward1{
         width: 215%;
-        -webkit-animation: m-forward1 35s linear infinite;
-        animation: m-forward1 35s linear infinite;
+        -webkit-animation: m-forward1 80s linear infinite;
+        animation: m-forward1 80s linear infinite;
     }
     @-webkit-keyframes m-forward1 {
         0% { left: -107%; }
@@ -931,8 +931,8 @@ nav a:active {
     }
     .run-line>.m-back{
         width: 215%;
-        -webkit-animation: m-back 35s linear infinite;
-        animation: m-back 35s linear infinite;
+        -webkit-animation: m-back 80s linear infinite;
+        animation: m-back 80s linear infinite;
     }
     @-webkit-keyframes m-back {
         0% { left: 0; }
@@ -1156,11 +1156,11 @@ nav a:active {
         100% { left: -96.5%; }
     }
     .logotip__img{
-        width: 245px;
-        height: 267px;
+        width: 200px;
+        height: 200px;
     }
     .logotip__text{
-        width: 265px;
+        width: 200px;
         height: 58px;
     }
     .pin-wrap1{
@@ -1463,8 +1463,8 @@ nav a:active {
     }
     .run-line>.m-forward1{
         width:246.6%;
-        -webkit-animation: m-forward1 60s linear infinite;
-        animation: m-forward1 60s linear infinite;
+        -webkit-animation: m-forward1 80s linear infinite;
+        animation: m-forward1 80s linear infinite;
     }
     @-webkit-keyframes m-forward1 {
         0% { left: -123.3%; }
@@ -1476,8 +1476,8 @@ nav a:active {
     }
     .run-line>.m-back{
         width:246.6%;
-        -webkit-animation: m-back 60s linear infinite;
-        animation: m-back 60s linear infinite;
+        -webkit-animation: m-back 80s linear infinite;
+        animation: m-back 80s linear infinite;
     }
     @-webkit-keyframes m-back {
         0% { left: 0; }
