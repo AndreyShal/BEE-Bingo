@@ -165,28 +165,35 @@ imageTransformGsap();
 function scrollGsap() {
   gsap.registerPlugin(ScrollToPlugin);
   document.querySelector("#scroll-team").addEventListener("click", function () {
-    gsap.to(window, { duration: 2, scrollTo: 70 });
+    gsap.to(window, { duration: 2, scrollTo: "#our-team-dsc" });
   });
   document.querySelector("#scroll-all-world").addEventListener("click", function () {
-    gsap.to(window, { duration: 2, scrollTo: 430 });
+    gsap.to(window, { duration: 2, scrollTo: "#all-world-dsc" });
   });
   document.querySelector("#scroll-predictions").addEventListener("click", function () {
-    gsap.to(window, { duration: 2, scrollTo: 790 });
+    gsap.to(window, { duration: 2, scrollTo: "#predictions-dsc" });
   });
   document.querySelector("#scroll-world-most").addEventListener("click", function () {
-    gsap.to(window, { duration: 2, scrollTo: 1150 });
+    gsap.to(window, { duration: 2, scrollTo: "#world-most-dsc" });
   });
   document.querySelector("#scroll-care").addEventListener("click", function () {
-    gsap.to(window, { duration: 2, scrollTo: 2050 });
+    gsap.to(window, { duration: 2, scrollTo: "#care-dsc" });
   });
 
   document.querySelector("#scroll-partners").addEventListener("click", function () {
-    gsap.to(window, { duration: 2, scrollTo: 3250 });
+    gsap.to(window, { duration: 2, scrollTo: "#partners-dsc" });
   });
 
   document.querySelector("#scroll-contact").addEventListener("click", function () {
-    console.log(gsap.to(window, { duration: 2, scrollTo: "max" }));
-    // gsap.to(document.querySelector("#sectionPin"), { duration: 2, scrollTo: { y: 0, x: 3250 }, ease: "power2" });
+    gsap.to(window, { duration: 2, scrollTo: "#contact-dsc" });
   });
 }
 scrollGsap();
+
+function testC0ordinates() {
+  let wnd = document.getElementById("contact-dsc");
+
+  let coords = wnd.getBoundingClientRect();
+  console.log(coords);
+}
+setInterval(testC0ordinates(), 5000);
