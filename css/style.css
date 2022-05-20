@@ -894,16 +894,19 @@ nav a:active {
     }
     .marque__container{
         position: fixed;
-        top: 0;
         left: 0;
         width: 100vw;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        z-index: 99999;
+        z-index: 1;
+    }
+    .marque__container-top{
+        top: 0;
+    }
+    .marque__container-bottom{
+        top: calc(100vh - 51px);
     }
     .marque__block{
+        position: fixed;
+        left: 0;
         width: 1400px;
         height: 51px;
         background-color: #282828;
@@ -1483,6 +1486,9 @@ nav a:active {
     #sectionPin .pin-wrap {
         width: 11171px;
         padding: 111px 0;
+    }
+    .marque__container-bottom{
+        top: calc(100vh - 111px);
     }
     .marque__block{
         height: 111px;
