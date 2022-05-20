@@ -100,12 +100,26 @@ function scrollGsap() {
   }
   scroller123();
 
+  // .................................................................ЭТОТ КОД НАДО ПЕРЕВЕСТИ В JS...........................................................................//
   $(".menu-item").on("click", function (event) {
     event.preventDefault();
     var id = $(this).attr("href");
     var left = $(id)[0].offsetLeft;
     gsap.to("html", { scrollTo: left, duration: 1.5 });
   });
+
+  // .................................................................ЭТО МОЯ ПОПЫТКА ПЕРЕВЕСТИ В JS...........................................................................//
+  // const menuItem = document.querySelectorAll(".menu-item");
+  // for (let i = 0; i < menuItem.length; i++) {
+  //   menuItem[i].addEventListener("click", function (event) {
+  //     event.preventDefault();
+  //     let id = this.getAttribute("href");
+  //     for (let e = 0; e < id.length; e++) {
+  //       let left = id[0].offsetLeft;
+  //       gsap.to("html", { scrollTo: left, duration: 1.5 });
+  //     }
+  //   });
+  // }
 }
 scrollGsap();
 
