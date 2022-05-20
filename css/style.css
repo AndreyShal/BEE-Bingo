@@ -175,6 +175,13 @@ display: none;
 :root {
 	--vh: 1vh;
 }
+
+html{
+    -ms-overflow-style: none;
+	overflow: -moz-scrollbars-none;
+	scrollbar-width: none;
+}
+
 body{
     max-width: 100%;
     width: 100%;
@@ -187,7 +194,8 @@ body::-webkit-scrollbar {
     height: 0;
 
 }
-.wrapper{
+
+.wrapper-mobail{
     width: 100vw;
     min-height: 200vh;
     background-color: #0D0D0D;
@@ -196,17 +204,12 @@ body::-webkit-scrollbar {
 	scrollbar-width: none;
 	overflow-x: hidden;
 }
-.wrapper::-webkit-scrollbar {
+.wrapper-mobail::-webkit-scrollbar {
     width: 0;
     height: 0;
 }
 .element::-webkit-scrollbar {
 	width: 0;
-}
-
-.smooth-scroll{
-    display: none;
-    overflow-y: hidden !important;
 }
 
 /* ...............................heder.................... */
@@ -373,6 +376,12 @@ nav a:active {
 }
 
 /* ..............................................................sections................................ */
+.marque__container{
+    display: none;
+}
+#sections{
+    display: none;
+}
 .section{
     position: relative;
     margin-bottom: 32px;
@@ -390,6 +399,7 @@ nav a:active {
 }
 .logotip__container{
     margin-top: calc(var(--vh, 1vh) * 15);
+    cursor: pointer;
 }
 .logotip__img{
     width: 70vw;
@@ -876,23 +886,25 @@ nav a:active {
     .smooth-scroll{
         display: block;
     }
-    #sectionPin {
-        height: 100vh;
-        overflow: hidden;
+    #sections {
         display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 100vh;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
         left: 0;
-   }
-    #sectionPin .pin-wrap {
         width: 5039px;
-        position: relative;
-        height: 100vh;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
         background-color: #0D0D0D;
         padding: 51px 0;
+        
+    }
+    
+    #sections::-webkit-scrollbar {
+        display: none;
     }
     .marque__container{
+        display: block;
         position: fixed;
         left: 0;
         width: 100vw;
@@ -1014,9 +1026,6 @@ nav a:active {
        display: block;
         width: 1572px;
         position: relative;
-        /* display: flex;
-        flex-direction: column;
-        justify-content: space-between; */
         padding: 9vh 60px 0vh;
    }
    .pin-wrap6>.section-title{
@@ -1158,7 +1167,7 @@ nav a:active {
     }
 }
 @media only screen and (min-width: 1919.95px){
-    #sectionPin .pin-wrap {
+    #sections {
         width: 5613px;
     }
     .marque__block{
@@ -1304,7 +1313,7 @@ nav a:active {
     }
 }
 @media only screen and (min-width: 2047.95px){
-    #sectionPin .pin-wrap {
+    #sections {
         width: 6906px;
     }
     .run-line{
@@ -1483,7 +1492,7 @@ nav a:active {
     }
 }
 @media only screen and (min-width: 3839.95px){
-    #sectionPin .pin-wrap {
+    #sections {
         width: 11171px;
         padding: 111px 0;
     }
@@ -1736,35 +1745,6 @@ nav a:active {
     }
 
     /* /////////////////////////////////////////////////////////////////////// */
-/* 
-    .scroll-text-button {
-        width: 64px;
-        height: 64px;
-        background-image: url("../img/ScrollDown.svg");
-        background-size: contain;
-        background-position: center;
-        -webkit-animation-name: spin;
-        -webkit-animation-duration: 5000ms;
-        -webkit-animation-iteration-count: infinite;
-        -webkit-animation-timing-function: linear;
-        -moz-animation-name: spin;
-        -moz-animation-duration: 5000ms;
-        -moz-animation-iteration-count: infinite;
-        -moz-animation-timing-function: linear;
-        -ms-animation-name: spin;
-        -ms-animation-duration: 5000ms;
-        -ms-animation-iteration-count: infinite;
-        -ms-animation-timing-function: linear;
-        animation-name: spin;
-        animation-duration: 5000ms;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-        backface-visibility: hidden;
-        transform: translateZ(0);
-        image-rendering: -webkit-optimize-contrast;
-        will-change: transform;
-        image-rendering: pixelated;
-    } */
 
     .section-img2,.section-img1, .section-img4, .img-menu-fon, .img-partners-fon{
         background-position: center;

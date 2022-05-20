@@ -76,66 +76,38 @@ var swiper1 = new Swiper(".swiper2", {
 });
 
 // ...................................................smoothScrollingPrinciples......................//
-function smoothScrollingPrinciples() {
-  gsap.registerPlugin(ScrollTrigger);
+function scrollGsap() {
+  function scroller123() {
+    gsap.registerPlugin(ScrollTrigger);
 
-  const locoScroll = new LocomotiveScroll({
-    el: document.querySelector(".smooth-scroll"),
-    smooth: true,
-  });
+    const container = document.getElementById("sections");
 
-  locoScroll.on("scroll", ScrollTrigger.update);
-
-  ScrollTrigger.scrollerProxy(".smooth-scroll", {
-    scrollTop(value) {
-      return arguments.length ? locoScroll.scrollTo(value, 0, 0) : locoScroll.scroll.instance.scroll.y;
-    },
-    getBoundingClientRect() {
-      return { top: 0, left: 1000, width: window.innerWidth, height: window.innerHeight };
-    },
-
-    pinType: document.querySelector(".smooth-scroll").style.transform ? "transform" : "fixed",
-  });
-
-  // let pinBoxes = document.querySelectorAll(".pin-wrap > *");
-  let pinWrap = document.querySelector(".pin-wrap");
-
-  let pinWrapWidth;
-  let horizontalScrollLength;
-
-  function resize() {
-    pinWrapWidth = pinWrap.offsetWidth;
-    horizontalScrollLength = pinWrapWidth - innerWidth;
-  }
-
-  ScrollTrigger.matchMedia({
-    "(min-width: 767px)": function () {
-      window.addEventListener("load", function () {
-        // Pinning and horizontal scrolling
-        gsap.to(".pin-wrap", {
+    ScrollTrigger.matchMedia({
+      "(min-width: 1200px)": function () {
+        gsap.to(container, {
+          x: () => -(container.offsetWidth - innerWidth) + "px",
+          ease: "none",
           scrollTrigger: {
-            scroller: ".smooth-scroll",
-            scrub: true,
-            trigger: "#sectionPin",
+            trigger: container,
+            invalidateOnRefresh: true,
             pin: true,
-            start: "top top",
-            end: () => `+=${pinWrapWidth}`, // Functional value to make sure it updates on refresh
-            invalidateOnRefresh: true, // Invalidate the tween as well
+            scrub: 1.6,
+            end: () => "+=" + (container.offsetWidth - innerWidth),
           },
-          x: () => -horizontalScrollLength,
-          ease: "sine.out",
         });
+      },
+    });
+  }
+  scroller123();
 
-        ScrollTrigger.addEventListener("refreshInit", resize);
-
-        ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
-
-        ScrollTrigger.refresh();
-      });
-    },
+  $(".menu-item").on("click", function (event) {
+    event.preventDefault();
+    var id = $(this).attr("href");
+    var left = $(id)[0].offsetLeft;
+    gsap.to("html", { scrollTo: left, duration: 1.5 });
   });
 }
-smoothScrollingPrinciples();
+scrollGsap();
 
 function imageTransformGsap() {
   gsap.from(".vector-line", {
@@ -161,39 +133,3 @@ function imageTransformGsap() {
   });
 }
 imageTransformGsap();
-
-function scrollGsap() {
-  gsap.registerPlugin(ScrollToPlugin);
-  document.querySelector("#scroll-team").addEventListener("click", function () {
-    gsap.to(window, { duration: 2, scrollTo: "#our-team-dsc" });
-  });
-  document.querySelector("#scroll-all-world").addEventListener("click", function () {
-    gsap.to(window, { duration: 2, scrollTo: "#all-world-dsc" });
-  });
-  document.querySelector("#scroll-predictions").addEventListener("click", function () {
-    gsap.to(window, { duration: 2, scrollTo: "#predictions-dsc" });
-  });
-  document.querySelector("#scroll-world-most").addEventListener("click", function () {
-    gsap.to(window, { duration: 2, scrollTo: "#world-most-dsc" });
-  });
-  document.querySelector("#scroll-care").addEventListener("click", function () {
-    gsap.to(window, { duration: 2, scrollTo: "#care-dsc" });
-  });
-
-  document.querySelector("#scroll-partners").addEventListener("click", function () {
-    gsap.to(window, { duration: 2, scrollTo: "#partners-dsc" });
-  });
-
-  document.querySelector("#scroll-contact").addEventListener("click", function () {
-    gsap.to(window, { duration: 2, scrollTo: "#contact-dsc" });
-  });
-}
-scrollGsap();
-
-function testC0ordinates() {
-  let wnd = document.getElementById("contact-dsc");
-
-  let coords = wnd.getBoundingClientRect();
-  console.log(coords);
-}
-setInterval(testC0ordinates(), 5000);
