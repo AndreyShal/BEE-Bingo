@@ -893,18 +893,18 @@ nav a:active {
         padding: 51px 0;
     }
     .marque__container{
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
-        width: 100%;
-        height: 100%;
+        width: 100vw;
+        height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        z-index: -1;
+        z-index: 99999;
     }
     .marque__block{
-        width: 100%;
+        width: 1400px;
         height: 51px;
         background-color: #282828;
     }
@@ -917,30 +917,30 @@ nav a:active {
         overflow: hidden;
     }
     .run-line>.m-forward1{
-        width: 215%;
-        -webkit-animation: m-forward1 80s linear infinite;
-        animation: m-forward1 80s linear infinite;
+        width: 465%;
+        -webkit-animation: m-forward1 30s linear infinite;
+        animation: m-forward1 30s linear infinite;
     }
     @-webkit-keyframes m-forward1 {
-        0% { left: -107%; }
+        0% { left: -232.5%; }
         100% { left: 0; }
     }
     @keyframes m-forward1 {
-        0% { left: -107%; }
+        0% { left: -232.5%; }
         100% { left: 0; }
     }
     .run-line>.m-back{
-        width: 215%;
-        -webkit-animation: m-back 80s linear infinite;
-        animation: m-back 80s linear infinite;
+        width: 465%;
+        -webkit-animation: m-back 30s linear infinite;
+        animation: m-back 30s linear infinite;
     }
     @-webkit-keyframes m-back {
         0% { left: 0; }
-        100% { left: -107%; }
+        100% { left:-232.5%; }
     }
     @keyframes m-back {
         0% { left: 0; }
-        100% { left: -107%; }
+        100% { left: -232.5%; }
     }
 
     .pin-wrap-num{
@@ -1117,6 +1117,31 @@ nav a:active {
     
 }
 @media only screen and (min-width: 1359.95px){
+    .marque__block{
+        width: 2100px;
+    }
+    .run-line>.m-forward1{
+        width: 310%;
+    }
+    @-webkit-keyframes m-forward1 {
+        0% { left: -155%; }
+        100% { left: 0; }
+    }
+    @keyframes m-forward1 {
+        0% { left: -155%; }
+        100% { left: 0; }
+    }
+    .run-line>.m-back{
+        width: 310%;
+    }
+    @-webkit-keyframes m-back {
+        0% { left: 0; }
+        100% { left: -155% }
+    }
+    @keyframes m-back {
+        0% { left: 0; }
+        100% { left: -155% }
+    }
     .logotip__img{
         width: 107px;
         height: 116px;
@@ -1133,27 +1158,30 @@ nav a:active {
     #sectionPin .pin-wrap {
         width: 5613px;
     }
+    .marque__block{
+        width: 2100px;
+    }
     .run-line>.m-forward1{
-        width: 193%;
+        width: 310%;
     }
     @-webkit-keyframes m-forward1 {
-        0% { left: -96.5%; }
+        0% { left: -155%; }
         100% { left: 0; }
     }
     @keyframes m-forward1 {
-        0% { left: -96.5%; }
+        0% { left: -155%; }
         100% { left: 0; }
     }
     .run-line>.m-back{
-        width: 193%;
+        width: 310%;
     }
     @-webkit-keyframes m-back {
         0% { left: 0; }
-        100% { left: -96.5%; }
+        100% { left: -155%; }
     }
     @keyframes m-back {
         0% { left: 0; }
-        100% { left: -96.5%; }
+        100% { left: -155%; }
     }
     .logotip__img{
         width: 200px;
@@ -1279,27 +1307,30 @@ nav a:active {
     .run-line{
         padding: 3px 0;
     }
+    .marque__block{
+        width: 3900px;
+    }
     .run-line>.m-forward1{
-        width: 181%;
+        width: 288.5%;
     }
     @-webkit-keyframes m-forward1 {
-        0% { left: -90.5%; }
+        0% { left: -144.25%; }
         100% { left: 0; }
     }
     @keyframes m-forward1 {
-        0% { left: -90.5%; }
+        0% { left: -144.25%; }
         100% { left: 0; }
     }
     .run-line>.m-back{
-        width: 181%;
+        width: 288.5%;
     }
     @-webkit-keyframes m-back {
         0% { left: 0; }
-        100% { left: -90.5%; }
+        100% { left: -144.25%; }
     }
     @keyframes m-back {
         0% { left: 0; }
-        100% { left: -90.5%; }
+        100% { left: -144.25%; }
     }
     .run-line>.m-forward1>.marquee-line-forward1>.span1, .run-line>.m-back>.marquee-line-back>.span1{
         font-size: 32px;
@@ -1456,36 +1487,37 @@ nav a:active {
     .marque__block{
         height: 111px;
         padding: 23px 0;
+        width: 5400px;
     }
     .run-line{
         height: 100%;
         padding: 0;
     }
     .run-line>.m-forward1{
-        width:246.6%;
-        -webkit-animation: m-forward1 80s linear infinite;
-        animation: m-forward1 80s linear infinite;
+        width:306.6%;
+        -webkit-animation: m-forward1 30s linear infinite;
+        animation: m-forward1 30s linear infinite;
     }
     @-webkit-keyframes m-forward1 {
-        0% { left: -123.3%; }
+        0% { left: -153.3%; }
         100% { left: 0; }
     }
     @keyframes m-forward1 {
-        0% { left: -123.3%; }
+        0% { left: -153.3%; }
         100% { left: 0; }
     }
     .run-line>.m-back{
-        width:246.6%;
-        -webkit-animation: m-back 80s linear infinite;
-        animation: m-back 80s linear infinite;
+        width:306.6%;
+        -webkit-animation: m-back 30s linear infinite;
+        animation: m-back 30s linear infinite;
     }
     @-webkit-keyframes m-back {
         0% { left: 0; }
-        100% { left: -123.3%; }
+        100% { left: -153.3%; }
     }
     @keyframes m-back {
         0% { left: 0; }
-        100% { left: -123.3%; }
+        100% { left: -153.3%; }
     }
     .run-line>.m-forward1>.marquee-line-forward1>.span1, .run-line>.m-back>.marquee-line-back>.span1{
         font-size: 48px;
