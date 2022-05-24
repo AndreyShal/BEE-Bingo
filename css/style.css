@@ -908,6 +908,11 @@ nav a:active {
 .feedback__container-and{
     margin-bottom: 20px;
 }
+.feedback__container-and>.section-text>a:hover{
+    color: #FCAE00;
+    cursor: pointer;
+    border-bottom: 1px solid #FCAE00;
+}
 .copyright__wrapper{
     width: 100%;
     display: -webkit-box;
@@ -916,7 +921,7 @@ nav a:active {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    z-index: 1;
+    z-index: -1;
 }
 .copyright-text__container{
     display: -webkit-box;
@@ -1299,6 +1304,8 @@ nav a:active {
        position: relative;
        width: 755px;
        border-right: 0px;
+    }
+    .section-end-content{
        padding: 9vh 60px 0vh;
    }
    .img-menu-fon__container{
