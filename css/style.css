@@ -1112,8 +1112,8 @@ nav a:active {
     }
     .run-line>.m-forward1{
         width: 465%;
-        -webkit-animation: m-forward1 30s linear infinite;
-        animation: m-forward1 30s linear infinite;
+        -webkit-animation: m-forward1 50s linear infinite;
+        animation: m-forward1 50s linear infinite;
     }
     @-webkit-keyframes m-forward1 {
         0% { left: -232.5%; }
@@ -1125,8 +1125,8 @@ nav a:active {
     }
     .run-line>.m-back{
         width: 465%;
-        -webkit-animation: m-back 30s linear infinite;
-        animation: m-back 30s linear infinite;
+        -webkit-animation: m-back 50s linear infinite;
+        animation: m-back 50s linear infinite;
     }
     @-webkit-keyframes m-back {
         0% { left: 0; }
@@ -1387,7 +1387,7 @@ nav a:active {
         width: 2100px;
     }
     .run-line>.m-forward1{
-        width: 310%;
+        width: 318%;
     }
     @-webkit-keyframes m-forward1 {
         0% { left: -155%; }
