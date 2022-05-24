@@ -52,7 +52,7 @@ toggleMenu();
 var swiper1 = new Swiper(".swiper2", {
   // Default parameters
   slidesPerView: 0,
-  spaceBetween: 10,
+  spaceBetween: 0,
 
   pagination: {
     el: ".swiper-pagination",
@@ -63,7 +63,7 @@ var swiper1 = new Swiper(".swiper2", {
   breakpoints: {
     // when window width is >= 360px
     320: {
-      slidesPerView: 1.1,
+      slidesPerView: 1.15,
       spaceBetween: 0,
       initialSlide: 0,
     },
