@@ -113,6 +113,14 @@ function scrollGsap() {
   });
 }
 scrollGsap();
+// window.addEventListener("resize", function setScreenSize() {
+//   var width = window.innerWidth;
+//   var height = window.innerHeight;
+// });
+window.addEventListener("resize", function () {
+  "use strict";
+  window.location.reload();
+});
 
 function imageTransformGsap() {
   gsap.from(".vector-line", {
@@ -138,3 +146,12 @@ function imageTransformGsap() {
   });
 }
 imageTransformGsap();
+
+// var oldWidth = window.innerWidth;
+// window.onresize = function () {
+//   var newWidth = window.innerWidth;
+//   if (newWidth != oldWidth) {
+//     alert("width changed");
+//     oldWidth = newWidth;
+//   }
+// };
