@@ -113,14 +113,6 @@ function scrollGsap() {
   });
 }
 scrollGsap();
-// window.addEventListener("resize", function setScreenSize() {
-//   var width = window.innerWidth;
-//   var height = window.innerHeight;
-// });
-// window.addEventListener("resize", function () {
-//   "use strict";
-//   window.location.reload();
-// });
 
 function imageTransformGsap() {
   gsap.from(".vector-line", {
@@ -150,9 +142,7 @@ imageTransformGsap();
 if (window.screen.width > 768) {
   document.addEventListener("visibilitychange", function () {
     if (document.hidden) {
-      // console.log('Вкладка не активна');
     } else {
-      // console.log('Вкладка активна');
       window.location.reload();
     }
   });

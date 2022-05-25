@@ -473,6 +473,7 @@ nav a:active {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding: 10%;
 }
 .logotip__container{
     margin-top: calc(var(--vh, 1vh) * 15);
@@ -1091,6 +1092,9 @@ nav a:active {
         background-color: #0D0D0D;
         padding: 51px 0;
         
+    }
+    .container{
+        padding: 0;
     }
     
     #sections::-webkit-scrollbar {
