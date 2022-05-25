@@ -216,6 +216,7 @@ body{
         overscroll-behavior: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     scrollbar-width: none;
+    background-color: #0D0D0D;
 }
 body::-webkit-scrollbar {
     width: 0;
@@ -276,9 +277,6 @@ header label {
     z-index: 1000;
 }
 
-header label:hover {
-    /* background-color: #ddd; */
-}
 
 header label span {
     position: absolute;
@@ -363,12 +361,14 @@ header label span {
     overflow: hidden;
     
 }
+
 .menu-container{
     position: relative;
     padding-top: calc(var(--vh, 1vh) * 10);
     width: 100%;
     height: 100%;
 }
+
 .img-menu-fon{
     position: absolute;
     top: 0;
@@ -383,14 +383,9 @@ header label span {
 
 }
 
-/* #burger-checkbox:checked ~ .menu-wrapper {
-    left: 0;
-} */
-
 .left-menu{
     left: 0;
 }
-
 
 nav{
     position: relative;
@@ -421,8 +416,6 @@ nav>ul{
     height: calc(var(--vh, 1vh) * 80);
 
 }
-
-
 
 nav a {
     padding: 14px 20px;
@@ -700,8 +693,6 @@ nav a:active {
     z-index: 1;
 }
 .swiper2{
-    /* margin-left: 16px; */
-    /* width: calc(100%-16px); */
     height: 380px;
     margin-bottom: 36px;
 }
@@ -779,8 +770,17 @@ nav a:active {
     background-position: center center;
     background-size: contain; 
     background-repeat: no-repeat;
-    background-image: url("../img/achievements/0.svg");
+    background-image: url("../img/achievements/0/0.svg");
+    transform: scale(1);
+    transition: transform 0.3s;
 }  
+.achievements-img0:hover{
+    transform: scale(1.08);
+    
+}
+.achievements-img0:active{
+    background-image: url("../img/achievements/0/0-active.svg");
+}
 .achievements>.section-text{
     text-align:left;
 }
@@ -949,12 +949,15 @@ nav a:active {
     -o-transition: all 0.3s;
     transition: all 0.3s;
 }
+.copyright-text>a{
+    color: #515151;
+}
 
-.copyright-text__container:hover .copyright-text>span{
+.copyright-text__container>.copyright-text>a:hover{
     color: #FCAE00;
 }
 
-.copyright-text__container:active .copyright-text>span {
+.copyright-text__container>.copyright-text>a:hover {
     color: #A58B53;
 }
 
@@ -1058,6 +1061,9 @@ nav a:active {
 }
 
 @media only screen and (min-width: 767.95px){
+    body{
+        background-color: #282828;
+    }
     .body-preloader{
         padding-bottom: 0;
     }
@@ -1356,26 +1362,26 @@ nav a:active {
         width: 2100px;
     }
     .run-line>.m-forward1{
-        width: 316%;
+        width: 312%;
     }
     @-webkit-keyframes m-forward1 {
-        0% { left: -158%; }
+        0% { left: -156%; }
         100% { left: 0; }
     }
     @keyframes m-forward1 {
-        0% { left: -158%; }
+        0% { left: -156%; }
         100% { left: 0; }
     }
     .run-line>.m-back{
-        width: 316%
+        width: 312%
     }
     @-webkit-keyframes m-back {
         0% { left: 0; }
-        100% { left: -158%; }
+        100% { left: -156%; }
     }
     @keyframes m-back {
         0% { left: 0; }
-        100% { left: -158%; }
+        100% { left: -156%; }
     }
     .logotip__img{
         width: 107px;
@@ -1393,31 +1399,6 @@ nav a:active {
     #sections {
         width: 5613px;
     }
-    /* .marque__block{
-        width: 2100px;
-    }
-    .run-line>.m-forward1{
-        width: 318%;
-    }
-    @-webkit-keyframes m-forward1 {
-        0% { left: -155%; }
-        100% { left: 0; }
-    }
-    @keyframes m-forward1 {
-        0% { left: -155%; }
-        100% { left: 0; }
-    }
-    .run-line>.m-back{
-        width: 310%;
-    }
-    @-webkit-keyframes m-back {
-        0% { left: 0; }
-        100% { left: -155%; }
-    }
-    @keyframes m-back {
-        0% { left: 0; }
-        100% { left: -155%; }
-    } */
     .logotip__img{
         width: 200px;
         height: 200px;
@@ -1554,14 +1535,14 @@ nav a:active {
         width: 3900px;
     }
     .run-line>.m-forward1{
-        width: 288.5%;
+        width: 290%;
     }
     @-webkit-keyframes m-forward1 {
-        0% { left: -144.25%; }
+        0% { left: -145%; }
         100% { left: 0; }
     }
     @keyframes m-forward1 {
-        0% { left: -144.25%; }
+        0% { left: -145%; }
         100% { left: 0; }
     }
     .run-line>.m-back{
@@ -1569,11 +1550,11 @@ nav a:active {
     }
     @-webkit-keyframes m-back {
         0% { left: 0; }
-        100% { left: -144.25%; }
+        100% { left: -145%; }
     }
     @keyframes m-back {
         0% { left: 0; }
-        100% { left: -144.25%; }
+        100% { left: -145%; }
     }
     .run-line>.m-forward1>.marquee-line-forward1>.span1, .run-line>.m-back>.marquee-line-back>.span1{
         font-size: 32px;

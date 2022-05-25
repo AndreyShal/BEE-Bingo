@@ -83,7 +83,7 @@ function scrollGsap() {
     const container = document.getElementById("sections");
 
     ScrollTrigger.matchMedia({
-      "(min-width: 1200px)": function () {
+      "(min-width: 768px)": function () {
         gsap.to(container, {
           x: () => -(container.offsetWidth - innerWidth) + "px",
           ease: "none",
@@ -117,10 +117,10 @@ scrollGsap();
 //   var width = window.innerWidth;
 //   var height = window.innerHeight;
 // });
-window.addEventListener("resize", function () {
-  "use strict";
-  window.location.reload();
-});
+// window.addEventListener("resize", function () {
+//   "use strict";
+//   window.location.reload();
+// });
 
 function imageTransformGsap() {
   gsap.from(".vector-line", {
@@ -147,11 +147,26 @@ function imageTransformGsap() {
 }
 imageTransformGsap();
 
-// var oldWidth = window.innerWidth;
-// window.onresize = function () {
-//   var newWidth = window.innerWidth;
-//   if (newWidth != oldWidth) {
-//     alert("width changed");
-//     oldWidth = newWidth;
-//   }
-// };
+if (window.screen.width > 768) {
+  document.addEventListener("visibilitychange", function () {
+    if (document.hidden) {
+      // console.log('Вкладка не активна');
+    } else {
+      // console.log('Вкладка активна');
+      window.location.reload();
+    }
+  });
+  var lastY = 1;
+  document.addEventListener(
+    "touchmove",
+    function (event) {
+      var lastS = document.documentElement.scrollTop;
+      if (lastS == 0 && lastY - event.touches[0].clientY < 0 && event.cancelable) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      lastY = event.touches[0].clientY;
+    },
+    { passive: false }
+  );
+}
